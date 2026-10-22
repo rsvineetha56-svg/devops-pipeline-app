@@ -7,7 +7,7 @@ REQUESTS = Counter("app_requests_total", "Total requests to the home page")
 @app.route("/")
 def home():
     REQUESTS.inc()
-    return "Hello from the CI/CD pipeline! Version 1"
+    return "Hello from the CI/CD pipeline! Version 2"
 
 @app.route("/health")
 def health():
